@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <table>
+                <tr>
+                    <td>
+                        <label>Number 1:</label>
+                        <input type="text" id="data1">
+                        <br>
+                        <label>Number 2:</label>
+                        <input type="text" id="data2">
+                    </td>
+                    <td>
+                        <button onclick="pushpub()">Push to pub/sub</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onClick="add()">Add</button>
+                        <button onclick="sub()">Subtract</button>
+                        <button onclick="mul()">Multiply</button>
+                        <button onclick="div">Divide</button>
+                    </td>
+                    <td>
+                        <lable>Result: </lable>
+                        <p id="serverresponse"></p>
+                    </td> 
+                </tr>
+        </table>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
