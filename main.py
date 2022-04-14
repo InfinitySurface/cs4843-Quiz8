@@ -1,44 +1,45 @@
-from flask import jsonify
+from google.cloud import pubsub_v1
+publisher = pubsub_v1.PublisherClient();
 
-def hello_world(request):
+def calculator(request):
+    request_json = request.get_json()
+
+    topicpath=publisher.topic_path('cloud-functions-346700','food-order-topic')
     
-    if request.args and 'operation' in request.args:
-        operation = request.args.get('operation')
-        first_operand = request.args.get('data1')
-        second_operand = request.args.get('data2')
+    headers = {'Access-Control-Allow-Origin': '*'}
 
-    if operation == 'add':
-        result = float(first_operand) + float(second_operand)
-        calculation = {
-            'total': str(result)
-        }
-    elif operation == 'sub':
-        result = float(first_operand) - float(second_operand)
-        calculation = {
-            'total':str(result)
-        }
-    elif operation == 'mul':
-        result = float(first_operand) * float(second_operand)
-        calculation = {
-            'total': str(result)
-        }
-    elif operation == 'div':
-        if float(second_operand) == 0:
-            calculation = {
-                'total': 'Div by Zero!'
-            }
+    if request.args:
+      if 'operation' in request.args:
+        opcode=request.args.get('operation')
+        if 'data1' in request.args and 'data2' in request.args:
+          try:
+            dat1=request.args.get('data1')
+            dat2=request.args.get('data2')
+            if opcode == 'add':
+              return (str(float(dat1) + float(dat2)),200,headers)
+            elif opcode == 'sub':
+              return (str(float(dat1) - float(dat2)),200,headers)
+            elif opcode == 'mul':
+              return (str(float(dat1) * float(dat2)),200,headers)
+            elif opcode == 'div':
+              if float(dat2) == 0:
+                return ("Div by Zero!",500,headers)
+              else:
+                return (str(float(dat1) / float(dat2)),200,headers)
+            else:
+              return ("Operation does not exist",500,headers)
+          except BaseException as e:
+            return (str(e),500,headers)
         else:
-            result = float(first_operand) / float(second_operand)
-            calculation = {
-                'total': str(result)
-            }
+          return ("No data was entered",500,headers)
+      elif 'publish' in request.args:
+        try:
+          futurepublish=publisher.publish(topicpath,data="Sent food order".encode("utf-8"))
+          futurepublish.result()
+          return ("Message Published!",200,headers)
+        except BaseException as e:
+          return (str(e),500,headers)
+      else:
+        return ("No operation was entered.",500,headers)
     else:
-        calculation = {
-            'total': 'No operation!'
-        }
-
-    response = jsonify({
-        'calculation': calculation
-    })
-
-    return response
+      return ("No arguments were entered.",500,headers)
