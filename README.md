@@ -2,26 +2,26 @@
 
 Shown below are the outputs from the http tigger with typing in the certain HTTP arguments in the search bar.
 
-![http trigger](https://user-images.githubusercontent.com/98137377/162641524-6b118a37-887a-433e-84f1-27fcd18f4c29.png)
+![HTTP-Trigger](https://user-images.githubusercontent.com/98137377/163491272-0d130919-4bde-4a06-b6ef-f5dd99dd2a13.png)
 
-Http Trigger: https://us-central1-cloud-functions-346700.cloudfunctions.net/gcf-calculator
+Http Trigger: https://us-central1-cloud-functions-346700.cloudfunctions.net/quiz8-gcf
 
-## Addition - 10 + 5
+## No Argument
 
-![add](https://user-images.githubusercontent.com/98137377/162641523-bc30e9de-a83b-4f5c-9327-2251174a5386.png)
+![No-Operation](https://user-images.githubusercontent.com/98137377/163491254-46f61055-71c5-4590-8e49-fc8d4a8fdaa2.png)
 
-## Subtraction - 10 - 5
+## Addition
 
-![sub](https://user-images.githubusercontent.com/98137377/162641522-1d15ff63-137f-4b9b-9246-3858f03be37e.png)
+![Add](https://user-images.githubusercontent.com/98137377/163491195-0a55a530-ca51-4b41-9a88-0a19451ace3c.png)
 
-## Multiplication - 10 * 5
+## Subtraction 
 
-![mul](https://user-images.githubusercontent.com/98137377/162641521-8db98437-a4b3-42a5-869e-72add27e2632.png)
+![Sub](https://user-images.githubusercontent.com/98137377/163491182-fe0d4159-3660-4ae0-b3d6-d06b4c81ce98.png)
 
-## Division - 10 / 2
+## Multiplication
 
-![div](https://user-images.githubusercontent.com/98137377/162641520-a29fdfcf-67a7-45c8-aa04-5b743c0d1e94.png)
+![Mul](https://user-images.githubusercontent.com/98137377/163491168-764d26c6-0c5c-4618-aa36-24366b55c882.png)
 
-## Division by 0 - 10 / 0
+## Division by 0
 
-![div0](https://user-images.githubusercontent.com/98137377/162641518-3a592863-44d1-4961-a60e-7ecf3e8c779c.png)
+![Div](https://user-images.githubusercontent.com/98137377/163491129-669ce6e7-1daa-4b21-ba54-66fdf4731b5b.png)
