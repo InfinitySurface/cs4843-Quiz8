@@ -29,3 +29,20 @@ Trigger URL: https://us-central1-cloud-functions-346700.cloudfunctions.net/quiz8
 ![Div](https://user-images.githubusercontent.com/98137377/163491129-669ce6e7-1daa-4b21-ba54-66fdf4731b5b.png)
 
 ## Part 2
+
+### Calculator Demo
+
+Calculator URL: https://storage.googleapis.com/calculator-function-page/calculatorApp.html
+
+![Calculator App](https://user-images.githubusercontent.com/98137377/163494827-40ca03c5-33e4-4266-9d0c-24557db983c2.png)
+
+![Calculator Demo](https://user-images.githubusercontent.com/98137377/163494835-a412dd99-ed10-4663-bde9-7f68301cec13.png)
+
+### Push to Pub/sub
+
+![Push-PubSub](https://user-images.githubusercontent.com/98137377/163494843-7e037e87-6a21-42ce-b491-5cfab6bee254.png)
+
+### Pub/Sub
+
+![pubsub-pull](https://user-images.githubusercontent.com/98137377/163494908-66f8cf6e-7e2b-4117-bbf9-3f2ea2620c5e.png)
+
