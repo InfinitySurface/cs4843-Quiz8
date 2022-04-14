@@ -6,7 +6,7 @@ Shown below are the outputs from the http tigger with typing in the certain HTTP
 
 ![HTTP-Trigger](https://user-images.githubusercontent.com/98137377/163491272-0d130919-4bde-4a06-b6ef-f5dd99dd2a13.png)
 
-Http Trigger: https://us-central1-cloud-functions-346700.cloudfunctions.net/quiz8-gcf
+Trigger URL: https://us-central1-cloud-functions-346700.cloudfunctions.net/quiz8-gcf
 
 ### No Argument
 
