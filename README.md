@@ -42,6 +42,8 @@ Calculator URL: https://storage.googleapis.com/calculator-function-page/calculat
 
 ![Push-PubSub](https://user-images.githubusercontent.com/98137377/163494843-7e037e87-6a21-42ce-b491-5cfab6bee254.png)
 
+## Part 3
+
 ### Pub/Sub
 
 ![pubsub-pull](https://user-images.githubusercontent.com/98137377/163494908-66f8cf6e-7e2b-4117-bbf9-3f2ea2620c5e.png)
